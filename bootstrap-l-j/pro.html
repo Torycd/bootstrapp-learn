@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist\css\bootstrap.css" />
+    <link rel="stylesheet" href="bootstrap-icons-1.8.2\bootstrap-icons.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="jquery-3.6.0.min.js" defer></script>
+    <title>landing page</title>
+  </head>
+  <body>
+    <!-- this is the navigation -->
+    <nav
+      class="navbar navbar-expand-md navbar-light fixed-top"
+      style="background-color: #e3f2fd"
+    >
+      <div class="container">
+        <a href="#" class="navbar-brand">
+          <img
+            src="clients\client-4.png"
+            class="img-fluid"
+            style="width: 50px"
+            alt="navbar brand"
+          />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link active">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#questions" class="nav-link">Question</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#OurTeam" class="nav-link">OurTeam</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="bg-light text-dark p-5">
+      <div class="container">
+        <div class="d-lg-flex align-items-center justify-content-between">
+          <div>
+            <h1 class="caption">Organize things</h1>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat,
+              impedit!
+            </p>
+            <button
+              class="btn btn-primary btn-lg"
+              data-bs-target="#readMore"
+              data-bs-toggle="modal"
+            >
+              Read More
+            </button>
+          </div>
+          <img src="img1.png" class="img-fluid d-none d-lg-block" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- modal -->
+    <div
+      class="modal fade"
+      id="readMore"
+      tabindex="-1"
+      aria-labelledby="readMore"
+      aria-hidden="true"
+    >
+      <!-- modal-dialog where the content will be the modal class has been set to -1 which means 
+        the backgorund will fade leaving the modal to show -->
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="readmore">Register Here</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="lead">Fill this Form</p>
+
+            <!-- form to fill -->
+            <form>
+              <div class="mb-3">
+                <label for="firstname" class="col-form-label"
+                  >First Name:
+                </label>
+                <input
+                  type="text"
+                  name="First-name"
+                  class="form-control"
+                  id="firstname"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="lastName" class="col-form-label">Last Name: </label>
+                <input
+                  type="text"
+                  name="Last-name"
+                  class="form-control"
+                  id="lastName"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="Email" class="col-form-label">Email: </label>
+                <input
+                  type="text"
+                  name="Email"
+                  class="form-control"
+                  id="Email"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="Phone" class="col-form-label">Phone: </label>
+                <input
+                  type="text"
+                  name="phone-no"
+                  class="form-control"
+                  id="Phone"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              data-bs-dismiss="modal"
+              class="btn btn-primary"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal end -->
+
+    <!-- this is the sign up part -->
+    <section class="p-5" style="background-color: #e3f2fd">
+      <div class="container">
+        <div class="d-sm-flex justify-content-between align-items-center">
+          <h2 class="mb-3 mb-md-0">Sign Up For More Info</h2>
+          <div class="input-group news-input">
+            <input type="text" class="form-control" placeholder="Enter email" />
+            <button type="button" class="btn btn-dark btn-lg">button</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end -->
+
+    <section class="p-5 bg-light">
+      <div class="container">
+        <div class="row g-5">
+          <!-- card one -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-secondary text-light">
+              <div class="card-body text-center">
+                <div class="h2 mb-3">
+                  <i class="bi bi-laptop"></i>
+                </div>
+                <h3 class="card-title">Virtual</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </p>
+                <a href="!#" type="button" class="btn btn-danger">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- card two -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-secondary text-light">
+              <div class="card-body text-center">
+                <div class="h2 mb-3">
+                  <i class="bi bi-person-square"></i>
+                </div>
+                <h3 class="card-title">Virtual</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </p>
+                <a href="!#" type="button" class="btn btn-danger">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- card three -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-secondary text-light">
+              <div class="card-body text-center">
+                <div class="h2 mb-3">
+                  <i class="bi bi-people"></i>
+                </div>
+                <h3 class="card-title">Virtual</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </p>
+                <a href="!#" type="button" class="btn btn-danger">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- card four -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-secondary text-light">
+              <div class="card-body text-center">
+                <div class="h2 mb-3">
+                  <i class="bi bi-laptop"></i>
+                </div>
+                <h3 class="card-title">Virtual</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </p>
+                <a href="!#" type="button" class="btn btn-danger">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Accordion section -->
+    <section class="p-5" style="background-color: #e3f2fd" id="questions">
+      <div class="container">
+        <h2 class="text-center mb-3">Frequently Asked Question</h2>
+        <div class="accordion accordion-flush" id="question">
+          <!-- first item -->
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#firstQa"
+              >
+                What You Need to Know?
+              </button>
+            </div>
+            <div id="firstQa" class="accordion-collapse collapse">
+              <div class="accordion-body" data-bs-parent="#question">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+                commodi quibusdam eius perspiciatis beatae, consectetur quas
+                ipsam ut eos pariatur fuga numquam earum dolores. Fugiat iure
+                libero aliquid reprehenderit eligendi quasi excepturi possimus
+                quisquam qui minima! Temporibus numquam cupiditate libero neque
+                eaque blanditiis repellat suscipit quasi deleniti, quaerat
+                repudiandae amet?
+              </div>
+            </div>
+          </div>
+
+          <!-- second item -->
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-target="#secongQa"
+                data-bs-toggle="collapse"
+              >
+                what you do?
+              </button>
+            </div>
+            <div class="accordion-collapse collapse" id="secongQa">
+              <div class="accordion-body" data-bs-parent="#question">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+                ex, nobis, quibusdam nesciunt esse fuga dicta sapiente dolore
+                libero ipsum facere officia deleniti eum quas maxime facilis,
+                asperiores mollitia ad dolorem cumque natus accusantium
+                voluptates. Minima incidunt cum ratione autem!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of the question -->
+
+    <!-- contact section -->
+    <section></section>
+
+    <!-- staff of organization -->
+    <section class="p-5 bg-light" id="OurTeam">
+      <div class="container">
+        <h2 class="text-center">Our Team</h2>
+        <div class="row g-4">
+          <!-- item one -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-secondary text-light">
+              <div class="card-body text-center">
+                <img
+                  src="testimonials\testimonials-1.jpg"
+                  alt=""
+                  class="rounded-circle img-fluid w-25"
+                />
+                <h3 class="card-title">John Doe</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Labore maiores temporibus, ab assumenda quidem perferendis ad,
+                  eos eum natus at veritatis aliquam accusantium magnam hic.
+                </p>
+                <!-- links to their social media -->
+                <a href="#">
+                  <i class="bi bi-twitter text-dark mx-1"></i>
+                </a>
+
+                <a href="#">
+                  <i class="bi bi-facebook text-dark mx-1"></i>
+                </a>
+
+                <a href="#">
+                  <i class="bi bi-instagram text-dark mx-1"></i>
+                </a>
+
+                <a href="#">
+                  <i class="bi bi-twitch text-dark mx-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- item 2 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-secondary text-light">
+              <div class="card-body text-center">
+                <img
+                  src="testimonials\testimonials-2.jpg"
+                  alt=""
+                  class="rounded-circle img-fluid w-25"
+                />
+                <h3 class="card-title">Sophy</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+                  cum error natus, eveniet assumenda doloribus magnam velit
+                  illum accusamus maiores consequuntur repudiandae magni
+                  asperiores est?
+                </p>
+                <!-- links to their social media -->
+                <a href="#">
+                  <i class="bi bi-twitter text-dark mx-1"></i>
+                </a>
+
+                <a href="#">
+                  <i class="bi bi-facebook text-dark mx-1"></i>
+                </a>
+
+                <a href="#">
+                  <i class="bi bi-instagram text-dark mx-1"></i>
+                </a>
+
+                <a href="#">
+                  <i class="bi bi-twitch text-dark mx-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- item 3 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-secondary text-light">
+              <div class="card-body text-center">
+                <img
+                  src="testimonials\testimonials-3.jpg"
+                  alt=""
+                  class="rounded-circle img-fluid w-25"
+                />
+                <h3 class="card-title">Maria curie</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Placeat ullam excepturi mollitia, doloribus atque nam optio
+                  quas pariatur omnis, sint fuga assumenda nesciunt iusto
+                  corrupti.
+                </p>
+                <!-- links to their social media -->
+                <a href="#">
+                  <i class="bi bi-twitter text-dark mx-1"></i>
+                </a>
+
+                <a href="#">
+                  <i class="bi bi-facebook text-dark mx-1"></i>
+                </a>
+
+                <a href="#">
+                  <i class="bi bi-instagram text-dark mx-1"></i>
+                </a>
+
+                <a href="#">
+                  <i class="bi bi-twitch text-dark mx-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-secondary text-light">
+              <div class="card-body text-center">
+                <img
+                  src="testimonials\testimonials-4.jpg"
+                  alt=""
+                  class="rounded-circle img-fluid w-25"
+                />
+                <h3 class="card-title">Victor Manning</h3>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum
+                  aliquam numquam possimus eveniet iusto aspernatur dolore
+                  facilis voluptates soluta voluptas tempore, magni quo, ea
+                  nobis.
+                </p>
+                <!-- links to their social media -->
+                <a href="#">
+                  <i class="bi bi-twitter text-dark mx-1"></i>
+                </a>
+
+                <a href="#">
+                  <i class="bi bi-facebook text-dark mx-1"></i>
+                </a>
+
+                <a href="#">
+                  <i class="bi bi-instagram text-dark mx-1"></i>
+                </a>
+
+                <a href="#">
+                  <i class="bi bi-twitch text-dark mx-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-5">
+      <div class="container">
+        <div class="vjustify-content-center align-items-center">
+          <nav>
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+
+              <li class="page-item">
+                <a class="page-link" href="#">1</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">2</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">3</a>
+              </li>
+
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="p-5 bg-dark text-light" style="list-style-type: none">
+      <div class="container">
+        <div>
+          <h2 class="text-center text-uppercase h2 mb-2">Copy Right &copy;</h2>
+        </div>
+        <div class="d-lg-flex align-items-center justify-content-between">
+          <div class="text-center mb-sm-3">
+            <li class="mb-1">About</li>
+            <li class="mb-1">Services</li>
+            <li class="mb-1">Contact</li>
+          </div>
+
+          <div class="text-center mb-sm-3">
+            <li class="mb-1">Shop</li>
+            <li class="mb-1">Blog</li>
+            <li class="mt-2">
+              <button
+                type="button"
+                class="btn btn-transparent text-light border-light bunn"
+              >
+                Subcribe Now
+              </button>
+            </li>
+          </div>
+
+          <div class="text-center">
+            <h3 class="mb-1">Contact</h3>
+            <p class="mb-1">
+              123, XYZ Road, BSK <br />
+              kamatak IN
+            </p>
+            <div class="mb-1">
+              <a href="#">
+                <i class="bi bi-twitter text-light mx-1"></i>
+              </a>
+
+              <a href="#">
+                <i class="bi bi-facebook text-light mx-1"></i>
+              </a>
+
+              <a href="#">
+                <i class="bi bi-instagram text-light mx-1"></i>
+              </a>
+
+              <a href="#">
+                <i class="bi bi-twitch text-light mx-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+          <i class="bi bi-arrow-up-circle h1 text-light"></i>
+        </a>
+        <!-- the last button -->
+      </div>
+    </footer>
+    
+    <script src="bootstrap-5.0.2-dist\js\bootstrap.bundle.js"></script>
+    <script src="script1.js"></script>
+  </body>
+</html>

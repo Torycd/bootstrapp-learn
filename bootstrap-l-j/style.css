@@ -1,0 +1,15 @@
+a {
+  text-decoration: none;
+}
+
+body::before {
+  display: block;
+  content: "";
+  margin-top: 60px;
+}
+
+@media (min-width: 768px) {
+  .news-input {
+    width: 50%;
+  }
+}
